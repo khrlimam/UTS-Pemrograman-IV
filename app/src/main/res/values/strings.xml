@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Beaches</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="beaches">
+        <item>Senggigi</item>
+        <item>Mawun</item>
+        <item>Pink</item>
+        <item>Mawi</item>
+        <item>Tebing</item>
+    </string-array>
+    <string-array name="beachesDesc">
+        <item>A perfect place to relax, Senggigi boasts a series of white sandy beaches and safe swimming areas. The point at central Senggigi has good waves for surfers. This place has a colourful reef which provides shelter to a variety of marine life and exquisitely shapped coral and makes it a perfect place to snorkel.\n\nIn the dry season, there is an interesting variety of boats moored in the bay. The town of Senggigi spreads out along nearly 10 km of coastal road. This road continues north to Bangsal, the port for the Gili Islands.\n\nSwimming off the beach is safe. You can also do some canoeing here in Senggigi. Visit Pura Batu Bolong on a rocky point south of Senggigi. There\'s good snorkeling off the point and in the sheltered bay around the headland.</item>
+        <item>From many beaches in Lombok Island especially in the south side, many beaches which are still unpopular, though the condition are quite well. Many factors caused this thing, but the main thing is the inadequate infrastructure and the less clean condition. Mawun beach is included to this category. If it seen form beach’s source, Mawun beach is so worth it to be a beach tourism destination. The beach which is a part of a bay, has horse shoe shaped with two hills in the west and east side. Has the white sand and soft texture in the center side of the beach. While in the west side, the sand tends to be rougher and mixed with rocks splits. The middle side of the beach’s topography is also steeper than in the west and east side. The waves in the middle part of the beach is also stronger compared to those in west and east side. The middle side of the beach also contaminated by plastic rubbish which carried by the waves. Its understandable because the middle side of the beach is faced directly to the Indian ocean while the west and east side of the beach is blocked by hill.\n\nEvery day, the beach is visited by visitors, domestic and foreign as well though it’s not in large amount. Domestic visitors usually come in the morning and leave the beach before the sun gets too hot. On the contrary, the foreign visitors usually visit this beach when the sun is still so hot at noon. Besides swimming, they also lay down spending times by reading of self-portraying.\n\nIf you want to visit this beach, choose the east and west side of the beach to do activities. Beside it clean, these two parts of the beach are gradually inclined and not too wavy. It also fit for kids to play.</item>
+        <item>Pink Beach, or Pantai Merah, as it is aptly named, is one of seven pink beaches on the planet, and is just one of the many amazing features of Komodo Island that make it truly a Natural Wonder of Nature. This exceptional beach gets its striking color from microscopic animals called Foraminifera, which produces a red pigment on the coral reefs. For this reason, it is called Red Beach in the local tongue. When the tiny fragments of red coral combine with the white sands, this produces the soft pink color that is visible along the shoreline. Aside from Pink Beach itself, a few small segments along Komodo’s eastern bay also have a pinkish tint.\n\nLocated immediately west of Flores island in East Nusa Tenggara , Komodo Island is one of three larger and many islets that make up the Komodo National Park and is particularly well-known as the natural habitat of the Komodo dragon. The Komodo Dragon is the largest living lizard, and takes its name after the island.\n\nTake a moment to appreciate panoramic views of turquoise seas, green rolling hills, blue skies, and fascinatingly pink sands. Aside from the obvious relaxation amidst this picture-perfect scenery, Komodo is not short of interesting activities to partake in. Once you have finished taking in the magnificent surroundings, take a dip in the waters and uncover the marine beauty that Pink Beach has to offer.</item>
+        <item>There is a beach in Lombok that popular for surfing, especially for intermediate/experienced surfer. This beach is called Mawi Beach. Maybe some people misspell it to Maui Beach. No it’s different. Mawi Beach is located in Lombok Island, Indonesia.\n\nThe wave quality is regional classic with the wave type of reef-coral. There are reefs, corals, sharp rocks, sands at the bottom of the sea. The wave power is hollow and fast with short normal length (50m) and good day length between 50 to 150m.\n\nBeside its popularity as a surfing beach, Mawi Beach has stunning scenery as well. The bay has white sand beach surrounded by hilly landscpae. The best time to visit Mawi Beach is between May-Oct, during dry season.\n\nThere is no facility at this beach but a small shelter. Most people stay at Kuta Beach Lombok since there are many hotels, restaurant, and other facilities built over there. Keep your important belonging at the hotel or ask trusted local people to accompany you and keep your belonging while you are surfing.</item>
+        <item>People may think about hills and waterfalls when it comes to a vacation in Rinjani Mountain. Well, it is true but they should not overlook the presence of an interesting beach called Tebing. Another name is Pasir Hitam Beach and it is located in Sambi Bangkol Village, Gangga Sub-District. Aside from the beauty, the beach is well-known due to its history. It is said the beach became the witness of the wrath of the old Rinjani Volcano. The name “Tebing” means cliff and the locals named it that way due to the presence of a big cliff near to the shoreline! So, what is the beach good for?\n\nAs mentioned earlier, the most noticeable feature of the beach is the cliff, having the height of about 25 meters. The texture is unique and it looks quite majestic as well. No wonder, visitors are likely to take pictures in front of the cliff instead of in front of the coast. The next unique feature of Tebing Beach is its black sand! According to the locals, such exotic sand is the result of the eruption of the volcano back then. As for the sea, it features calm waves so visitors can enjoy swimming safely there.\n\nThe first thing to do in Tebing Beach is to explore the site. For instance, visitors can enjoy beach walking to their heart’s content. The sand has the exotic black color and it has the soft texture as well. Even it feels comfortable walking on it without sandals or shoes! Next, do not forget to approach the cliff located near to the coast. Most visitors take some pictures in front of it, so you should not miss such opportunity too.</item>
+    </string-array>
+    <array name="thumbs">
+        <item>@drawable/senggigi_1</item>
+        <item>@drawable/mawun_1</item>
+        <item>@drawable/pink_1</item>
+        <item>@drawable/mawi_1</item>
+        <item>@drawable/tebing_1</item>
+    </array>
+    <string name="title_activity_beach_detail">BeachDetail</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+</resources>
