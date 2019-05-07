@@ -18,11 +18,11 @@
         <item>People may think about hills and waterfalls when it comes to a vacation in Rinjani Mountain. Well, it is true but they should not overlook the presence of an interesting beach called Tebing. Another name is Pasir Hitam Beach and it is located in Sambi Bangkol Village, Gangga Sub-District. Aside from the beauty, the beach is well-known due to its history. It is said the beach became the witness of the wrath of the old Rinjani Volcano. The name “Tebing” means cliff and the locals named it that way due to the presence of a big cliff near to the shoreline! So, what is the beach good for?\n\nAs mentioned earlier, the most noticeable feature of the beach is the cliff, having the height of about 25 meters. The texture is unique and it looks quite majestic as well. No wonder, visitors are likely to take pictures in front of the cliff instead of in front of the coast. The next unique feature of Tebing Beach is its black sand! According to the locals, such exotic sand is the result of the eruption of the volcano back then. As for the sea, it features calm waves so visitors can enjoy swimming safely there.\n\nThe first thing to do in Tebing Beach is to explore the site. For instance, visitors can enjoy beach walking to their heart’s content. The sand has the exotic black color and it has the soft texture as well. Even it feels comfortable walking on it without sandals or shoes! Next, do not forget to approach the cliff located near to the coast. Most visitors take some pictures in front of it, so you should not miss such opportunity too.</item>
     </string-array>
     <array name="thumbs">
-        <item>@drawable/senggigi_1</item>
+        <item>@drawable/senggigi_10</item>
         <item>@drawable/mawun_1</item>
-        <item>@drawable/pink_1</item>
-        <item>@drawable/mawi_1</item>
-        <item>@drawable/tebing_1</item>
+        <item>@drawable/pink_5</item>
+        <item>@drawable/mawi_4</item>
+        <item>@drawable/tebing_5</item>
     </array>
     <string name="title_activity_beach_detail">BeachDetail</string>
     <string name="large_text">
