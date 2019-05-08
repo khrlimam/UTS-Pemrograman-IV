@@ -1,12 +1,15 @@
 package school.app.beaches
 
 import android.os.Bundle
+import android.support.design.widget.BottomSheetBehavior
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
-import android.view.*
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.drawer_with_thumbs.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,8 +29,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.drawer_with_thumbs)
         val data = prepareData()
-
-        mSectionsPagerAdapter = ViewPagerAdapter(data)
+        val bottomSheet = BottomSheetBehavior.from(rvBeaches)
+        bottomSheet.isHideable = true
+        mSectionsPagerAdapter = ViewPagerAdapter(data) {
+            bottomSheet.apply {
+                state = when (state) {
+                    BottomSheetBehavior.STATE_HIDDEN -> BottomSheetBehavior.STATE_EXPANDED
+                    else -> BottomSheetBehavior.STATE_HIDDEN
+                }
+            }
+        }
 
         adapter = ThumbnailAdapter(data) {
             container.setCurrentItem(it, true)

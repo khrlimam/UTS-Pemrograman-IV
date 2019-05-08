@@ -1,6 +1,7 @@
 package school.app.beaches
 
 import android.os.Bundle
+import android.support.design.widget.BottomSheetBehavior
 import android.support.v4.view.PagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -18,7 +19,16 @@ class SeeGallery : AppCompatActivity() {
         val images = data_.getImages(this)
         val position = intent.getIntExtra(BeachDetail.GALLERY_POSITION, 0)
         val data = images.map { ThumbnailItem("", it, "") }
-        mSectionsPagerAdapter = ViewPagerAdapter(data)
+        val bottomSheet = BottomSheetBehavior.from(rvBeaches)
+        bottomSheet.isHideable = true
+        mSectionsPagerAdapter = ViewPagerAdapter(data) {
+            bottomSheet.apply {
+                state = when (state) {
+                    BottomSheetBehavior.STATE_HIDDEN -> BottomSheetBehavior.STATE_EXPANDED
+                    else -> BottomSheetBehavior.STATE_HIDDEN
+                }
+            }
+        }
 
         adapter = ThumbnailAdapter(data) {
             container.setCurrentItem(it, true)

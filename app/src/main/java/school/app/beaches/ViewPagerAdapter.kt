@@ -9,12 +9,12 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.viewpager_content.view.*
 
-class ViewPagerAdapter(private val listData: List<ThumbnailItem>) : PagerAdapter() {
+class ViewPagerAdapter(private val listData: List<ThumbnailItem>, private val onClick: () -> Unit) : PagerAdapter() {
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val view = LayoutInflater.from(container.context)
             .inflate(R.layout.viewpager_content, container, false)
-        ItemHolder(view).bind(getItem(position))
+        ItemHolder(view, onClick).bind(getItem(position))
         container.addView(view)
         return view
     }
@@ -28,7 +28,7 @@ class ViewPagerAdapter(private val listData: List<ThumbnailItem>) : PagerAdapter
 
     override fun getCount() = listData.size
 
-    class ItemHolder(val view: View) {
+    class ItemHolder(val view: View, val onClick: () -> Unit) {
         fun bind(item: ThumbnailItem) {
             view.apply {
                 tvBeach.text = item.name
@@ -38,6 +38,9 @@ class ViewPagerAdapter(private val listData: List<ThumbnailItem>) : PagerAdapter
                     context.startActivity(Intent(context, BeachDetail::class.java).apply {
                         putExtra(THUMBNAIL_ITEM, item)
                     })
+                }
+                setOnClickListener {
+                    onClick()
                 }
             }
         }
