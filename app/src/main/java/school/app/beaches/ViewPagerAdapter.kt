@@ -5,6 +5,7 @@ import android.support.v4.view.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.viewpager_content.view.*
 
@@ -31,6 +32,7 @@ class ViewPagerAdapter(private val listData: List<ThumbnailItem>) : PagerAdapter
         fun bind(item: ThumbnailItem) {
             view.apply {
                 tvBeach.text = item.name
+                toggleView(item, this)
                 Glide.with(context).load(item.thumb).into(ivImage)
                 btnViewDetail.setOnClickListener {
                     context.startActivity(Intent(context, BeachDetail::class.java).apply {
@@ -39,6 +41,23 @@ class ViewPagerAdapter(private val listData: List<ThumbnailItem>) : PagerAdapter
                 }
             }
         }
+
+        private fun toggleView(item: ThumbnailItem, view: View) {
+            view.apply {
+                if (item.name.isEmpty()) {
+                    tvPantai.gone()
+                    btnViewDetail.gone()
+                    ivImage.scaleType = ImageView.ScaleType.FIT_CENTER
+                    vScrim.gone()
+                } else {
+                    tvPantai.visible()
+                    btnViewDetail.visible()
+                    ivImage.scaleType = ImageView.ScaleType.CENTER_CROP
+                    vScrim.visible()
+                }
+            }
+        }
+
     }
 
     companion object {

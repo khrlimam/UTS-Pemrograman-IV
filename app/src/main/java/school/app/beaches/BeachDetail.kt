@@ -1,5 +1,6 @@
 package school.app.beaches
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -26,13 +27,22 @@ class BeachDetail : AppCompatActivity() {
         toolbar_layout.title = data.name
         toolbar.title = data.name
         rvImages.layoutManager = GridLayoutManager(this, 2)
-        rvImages.adapter = BeachImageAdapter(data.getImages(this)) {}
+        rvImages.adapter = BeachImageAdapter(data.getImages(this)) {
+            startActivity(Intent(this, SeeGallery::class.java).apply {
+                putExtra(GALLERY_POSITION, it)
+                putExtra(ViewPagerAdapter.THUMBNAIL_ITEM, data)
+            })
+        }
         Glide.with(this).load(data.thumb).into(ivImageHeader)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item?.itemId == android.R.id.home) onBackPressed()
         return super.onOptionsItemSelected(item)
+    }
+
+    companion object {
+        const val GALLERY_POSITION = "GALLERY POSITION"
     }
 
 }

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity android:name=".SeeGallery"></activity>
         <activity
             android:name=".BeachDetail"
             android:label="@string/title_activity_beach_detail" />
