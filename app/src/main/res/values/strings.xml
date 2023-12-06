@@ -17,6 +17,13 @@
         <item>There is a beach in Lombok that popular for surfing, especially for intermediate/experienced surfer. This beach is called Mawi Beach. Maybe some people misspell it to Maui Beach. No it’s different. Mawi Beach is located in Lombok Island, Indonesia.\n\nThe wave quality is regional classic with the wave type of reef-coral. There are reefs, corals, sharp rocks, sands at the bottom of the sea. The wave power is hollow and fast with short normal length (50m) and good day length between 50 to 150m.\n\nBeside its popularity as a surfing beach, Mawi Beach has stunning scenery as well. The bay has white sand beach surrounded by hilly landscpae. The best time to visit Mawi Beach is between May-Oct, during dry season.\n\nThere is no facility at this beach but a small shelter. Most people stay at Kuta Beach Lombok since there are many hotels, restaurant, and other facilities built over there. Keep your important belonging at the hotel or ask trusted local people to accompany you and keep your belonging while you are surfing.</item>
         <item>People may think about hills and waterfalls when it comes to a vacation in Rinjani Mountain. Well, it is true but they should not overlook the presence of an interesting beach called Tebing. Another name is Pasir Hitam Beach and it is located in Sambi Bangkol Village, Gangga Sub-District. Aside from the beauty, the beach is well-known due to its history. It is said the beach became the witness of the wrath of the old Rinjani Volcano. The name “Tebing” means cliff and the locals named it that way due to the presence of a big cliff near to the shoreline! So, what is the beach good for?\n\nAs mentioned earlier, the most noticeable feature of the beach is the cliff, having the height of about 25 meters. The texture is unique and it looks quite majestic as well. No wonder, visitors are likely to take pictures in front of the cliff instead of in front of the coast. The next unique feature of Tebing Beach is its black sand! According to the locals, such exotic sand is the result of the eruption of the volcano back then. As for the sea, it features calm waves so visitors can enjoy swimming safely there.\n\nThe first thing to do in Tebing Beach is to explore the site. For instance, visitors can enjoy beach walking to their heart’s content. The sand has the exotic black color and it has the soft texture as well. Even it feels comfortable walking on it without sandals or shoes! Next, do not forget to approach the cliff located near to the coast. Most visitors take some pictures in front of it, so you should not miss such opportunity too.</item>
     </string-array>
+    <string-array name="locations">
+        <item>-8.4785956,116.0362874</item>
+        <item>-8.9008471,116.2219448</item>
+        <item>-8.8553735,116.5416502</item>
+        <item>-8.8901878,116.150231</item>
+        <item>-8.5958159,115.0109689</item>
+    </string-array>
     <array name="thumbs">
         <item>@drawable/senggigi_10</item>
         <item>@drawable/mawun_1</item>
@@ -114,5 +121,6 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="gallery">Gallery:</string>
 
 </resources>

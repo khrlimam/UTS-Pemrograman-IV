@@ -18,7 +18,7 @@ class SeeGallery : AppCompatActivity() {
         val data_ = intent.getParcelableExtra<ThumbnailItem>(ViewPagerAdapter.THUMBNAIL_ITEM)
         val images = data_.getImages(this)
         val position = intent.getIntExtra(BeachDetail.GALLERY_POSITION, 0)
-        val data = images.map { ThumbnailItem("", it, "") }
+        val data = images.map { ThumbnailItem("", it, "", "") }
         val bottomSheet = BottomSheetBehavior.from(rvBeaches)
         bottomSheet.isHideable = true
         mSectionsPagerAdapter = ViewPagerAdapter(data) {

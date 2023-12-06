@@ -3,14 +3,13 @@ package school.app.beaches
 import android.os.Bundle
 import android.support.design.widget.BottomSheetBehavior
 import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import kotlinx.android.synthetic.main.drawer_with_thumbs.*
+import kotlinx.android.synthetic.main.drawer_with_thumbs.container
+import kotlinx.android.synthetic.main.drawer_with_thumbs.rvBeaches
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,28 +45,12 @@ class MainActivity : AppCompatActivity() {
 
         container.adapter = mSectionsPagerAdapter
         rvBeaches.adapter = adapter
-        container.addOnPageChangeListener(onPageChange())
 
         container.setPageTransformer(false, ParallaxTransformer())
 
         rvBeaches.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
     }
-
-    private fun onPageChange(): ViewPager.OnPageChangeListener {
-        return object : ViewPager.OnPageChangeListener {
-            override fun onPageScrolled(p0: Int, p1: Float, p2: Int) {
-            }
-
-            override fun onPageScrollStateChanged(p0: Int) {
-            }
-
-            override fun onPageSelected(p0: Int) {
-                Log.i(localClassName, "Page on position $p0")
-            }
-        }
-    }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -95,9 +78,15 @@ class MainActivity : AppCompatActivity() {
     private fun prepareData(): List<ThumbnailItem> {
         val beaches = resources.getStringArray(R.array.beaches)
         val beachDescs = resources.getStringArray(R.array.beachesDesc)
+        val locations = resources.getStringArray(R.array.locations)
         val thumbs = resources.obtainTypedArray(R.array.thumbs)
         val data = beaches.withIndex()
-            .map { ThumbnailItem(it.value, thumbs.getResourceId(it.index, -1), beachDescs[it.index]) }
+            .map {
+                ThumbnailItem(
+                    it.value, thumbs.getResourceId(it.index, -1), beachDescs[it.index],
+                    locations[it.index]
+                )
+            }
         thumbs.recycle()
         return data
     }

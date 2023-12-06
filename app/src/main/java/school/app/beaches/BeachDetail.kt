@@ -1,15 +1,19 @@
 package school.app.beaches
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.view.MenuItem
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_beach_detail.*
-import kotlinx.android.synthetic.main.content_beach_detail.*
+import kotlinx.android.synthetic.main.activity_beach_detail.fab
+import kotlinx.android.synthetic.main.activity_beach_detail.ivImageHeader
+import kotlinx.android.synthetic.main.activity_beach_detail.rvImages
+import kotlinx.android.synthetic.main.activity_beach_detail.toolbar
+import kotlinx.android.synthetic.main.activity_beach_detail.toolbar_layout
+import kotlinx.android.synthetic.main.content_beach_detail.tvDesc
 
 class BeachDetail : AppCompatActivity() {
 
@@ -20,7 +24,13 @@ class BeachDetail : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val data = intent.getParcelableExtra<ThumbnailItem>(ViewPagerAdapter.THUMBNAIL_ITEM)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Will redirect you to the map", Snackbar.LENGTH_LONG)
+            // Create a Uri from an intent string. Use the result to create an Intent.
+            val gmmIntentUri = Uri.parse("http://maps.google.com/maps?q=${data.location}")
+            val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            mapIntent.resolveActivity(packageManager)?.let {
+                startActivity(mapIntent)
+            } ?: Snackbar.make(view, "No sufficient app found", Snackbar.LENGTH_LONG)
                 .setAction("Nothing", null).show()
         }
         tvDesc.text = data.desc
